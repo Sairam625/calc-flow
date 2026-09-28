@@ -1,5 +1,7 @@
 # CalciFlow: Autonomous Biogenic Calcium Carbonate Refining Infrastructure
 
+> **Important Notice:** This repository represents an interactive architectural prototype and proof-of-concept demonstration, not the final commercial production product. A comprehensive, production-grade enterprise platform (featuring live industrial PLC hardware integrations, distributed edge telemetry, and enterprise microservices) is currently under active engineering for final deployment.
+
 CalciFlow is an end-to-end circular bio-refining platform that transforms high-volume eggshell bio-waste into certified Grade A and Grade A+ industrial-grade Calcium Carbonate (CaCO3). The platform bridges the gap between commercial waste generators, advanced physical refining operations, analytical quality assurance, and industrial B2B procurement for polymers, technical coatings, paper, and sustainable precast concrete.
 
 ---
