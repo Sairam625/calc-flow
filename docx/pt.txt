@@ -1,0 +1,1180 @@
+Build a Complete SIH Prototype Website for "CalciFlow"
+Project Title
+
+CalciFlow — AI-Driven CaCO₃ Grading & Supply Platform from Eggshell Waste
+
+Objective
+
+Build a polished, modern, fully interactive web platform that digitally represents the complete CalciFlow ecosystem.
+
+This is an SIH (Smart India Hackathon) project prototype. The website must not look like a basic college project or a static informational website.
+
+It should look like a real-world industrial/agri-tech/circular-economy SaaS platform that could realistically be used by restaurants, collection centers, processing units, quality-control teams, manufacturers, and buyers.
+
+The website should combine:
+
+A public-facing explanation of the CalciFlow technology and process.
+A complete interactive digital platform/dashboard representing how the real-world system operates.
+1. Core Concept
+
+CalciFlow converts discarded eggshell waste into a usable CaCO₃-rich material through a structured process.
+
+The overall system should visually communicate:
+
+Eggshell Waste → Collection → Sorting → Cleaning → Drying → Grinding → Processing → AI Quality Grading → Classification → Storage → Buyer Matching → Supply
+
+The platform should demonstrate how waste can be converted into a valuable industrial resource while providing traceability and quality control.
+
+The website should emphasize:
+
+Circular economy
+Waste-to-value conversion
+AI-driven quality grading
+Supply-chain traceability
+Automated quality assessment
+Sustainable manufacturing
+Industrial applications of CaCO₃
+Data-driven decision making
+2. Website Structure
+
+Create the following major sections/pages:
+
+A. Landing / Home
+
+Create a visually impressive hero section.
+
+Headline:
+
+"From Eggshell Waste to Industrial Value."
+
+Subheading:
+
+"CalciFlow transforms discarded eggshells into quality-graded CaCO₃ through AI-driven processing, traceability, and intelligent supply management."
+
+Primary CTA:
+
+Explore CalciFlow
+
+Secondary CTA:
+
+View Live System
+
+Hero visual:
+
+Show an animated or interactive flow:
+
+Eggshell Waste
+↓
+Collection
+↓
+Processing
+↓
+AI Grading
+↓
+CaCO₃
+↓
+Industrial Applications
+
+Include subtle animations and futuristic data visualization.
+
+Add key metrics such as:
+
+Eggshell Waste Collected
+CaCO₃ Recovered
+Batches Processed
+Quality Pass Rate
+Waste Diverted
+Active Buyers
+
+Use realistic demo values.
+
+3. Problem Section
+
+Explain the problem clearly.
+
+Show the current problems associated with eggshell waste:
+
+Large amounts of eggshell waste are generated every day.
+Much of it is discarded without value recovery.
+Improper disposal creates hygiene and environmental problems.
+Valuable calcium carbonate remains underutilized.
+Existing supply chains lack standardized grading and traceability.
+Industries need consistent quality material.
+
+Use cards and visual statistics instead of large paragraphs.
+
+Add a visual:
+
+Waste → Lost Resource
+
+Then transition into:
+
+CalciFlow → Waste → Resource
+
+4. CalciFlow Solution
+
+Create a section explaining the solution.
+
+Display the complete pipeline as an interactive process map:
+
+Stage 1 — Collection
+
+Eggshells are collected from:
+
+Restaurants
+Bakeries
+Hotels
+Food processing units
+Poultry/egg-related facilities
+
+Show collection locations on a map.
+
+Stage 2 — Sorting
+
+Separate eggshell waste from contaminants.
+
+Display:
+
+Clean shells
+Contaminated shells
+Rejected material
+Stage 3 — Cleaning & Sanitization
+
+Explain that collected shells undergo cleaning and sanitization before processing.
+
+Show process indicators:
+
+Washing
+Sanitization
+Drying
+Stage 4 — Drying
+
+Show moisture reduction.
+
+Dashboard values:
+
+Input Moisture
+→ Drying
+→ Final Moisture
+
+Use animated progress indicators.
+
+Stage 5 — Grinding
+
+Show eggshells being converted into fine powder.
+
+Display:
+
+Particle size
+Grinding level
+Batch quantity
+Stage 6 — CaCO₃ Processing
+
+Represent conversion/refinement into a CaCO₃-rich material.
+
+Show relevant quality parameters.
+
+Stage 7 — AI Quality Grading
+
+This is one of the most important parts of the project.
+
+Create an interactive AI grading interface.
+
+Users should be able to upload simulated batch data or enter parameters such as:
+
+CaCO₃ purity
+Moisture
+Particle size
+Color
+Contamination level
+pH
+Batch weight
+
+The system should generate:
+
+AI Quality Score
+
+Example:
+
+92/100
+
+Grade:
+
+Grade A
+
+Then show:
+
+Purity: 94.8%
+Moisture: 1.8%
+Particle Size: 75 μm
+Contamination: Low
+Confidence: 96%
+
+Add a visual gauge/radar chart.
+
+Clearly label this as:
+
+AI-Powered Quality Assessment
+
+5. AI Grading Page
+
+Create a dedicated page called:
+
+AI Quality Lab
+
+This should feel like an actual software module.
+
+Layout:
+
+LEFT SIDE:
+Input parameters / batch information.
+
+RIGHT SIDE:
+AI-generated analysis.
+
+Inputs:
+
+Batch ID
+Source
+Weight
+CaCO₃ %
+Moisture %
+Particle Size
+Contamination %
+pH
+
+Button:
+
+Run AI Grading
+
+When clicked, animate a short "AI analyzing batch..." process.
+
+Then generate a result card:
+
+AI Quality Report
+
+Grade: A
+
+Quality Score: 94/100
+
+Purity: 95.2%
+
+Moisture: 1.6%
+
+Particle Size: 72 μm
+
+Contamination Risk: Low
+
+AI Confidence: 97%
+
+Recommendation:
+
+Suitable for industrial-grade applications
+
+Add buttons:
+
+Save Report
+View Batch
+Generate Certificate
+6. Batch Management
+
+Create a complete batch management system.
+
+Page:
+
+Batch Management
+
+Display table:
+
+Batch ID	Source	Weight	Purity	Grade	Status	Date
+
+Example:
+
+CF-2026-001
+CF-2026-002
+CF-2026-003
+CF-2026-004
+
+Statuses:
+
+Collected
+Processing
+Testing
+Approved
+Rejected
+Ready for Supply
+
+Clicking a batch should open a detailed batch page.
+
+7. Batch Traceability
+
+Every batch should have a unique ID.
+
+Example:
+
+CF-BATCH-2026-00124
+
+Show its complete journey:
+
+Source
+↓
+Collection
+↓
+Transport
+↓
+Processing
+↓
+Testing
+↓
+AI Grading
+↓
+Storage
+↓
+Buyer
+
+Create a timeline.
+
+Show:
+
+Collection date
+Collection location
+Source organization
+Processing facility
+Processing time
+Quality test
+AI grade
+Current inventory location
+Buyer/order
+
+This should demonstrate end-to-end traceability.
+
+8. Collection Management
+
+Create a module:
+
+Collection Network
+
+Show collection points on an interactive map.
+
+Example locations:
+
+Restaurants
+Hotels
+Bakeries
+Food processing centers
+Collection hubs
+
+Each collection point should display:
+
+Location
+Daily eggshell generation
+Collected quantity
+Last pickup
+Next pickup
+Collection status
+
+Example statuses:
+
+🟢 Active
+🟡 Pickup Due
+🔴 Inactive
+
+Add:
+
+Schedule Pickup
+
+button.
+
+9. Supply Chain Management
+
+Create a page:
+
+Supply & Marketplace
+
+Two user types:
+
+Supplier
+
+Can:
+
+View available material
+View quality grades
+Manage inventory
+Create batches
+Track orders
+Buyer
+
+Can:
+
+Search CaCO₃ material
+Filter by grade
+Filter by purity
+Filter by particle size
+View available quantity
+Request material
+Place order
+
+Create product cards such as:
+
+CaCO₃ Grade A
+
+Purity:
+95%
+
+Particle Size:
+<75 μm
+
+Available:
+250 kg
+
+Source:
+CalciFlow Processing Unit
+
+AI Quality Score:
+94/100
+
+Button:
+
+Request Batch
+
+10. Applications of CaCO₃
+
+Create a visually attractive applications section.
+
+Show different industries:
+
+Construction
+
+Fillers and construction materials.
+
+Plastics
+
+Used as a filler and functional additive.
+
+Paper
+
+Used as a mineral filler/coating material.
+
+Agriculture
+
+Potential calcium-rich soil/agricultural applications where appropriate.
+
+Animal Feed
+
+Potential calcium supplementation applications where regulatory and safety requirements are met.
+
+Industrial Manufacturing
+
+Various calcium carbonate applications.
+
+Do not make unsupported medical or safety claims.
+
+Use interactive cards with icons/illustrations.
+
+11. Sustainability Dashboard
+
+Create:
+
+Impact Dashboard
+
+Show real-time/demo metrics:
+
+Waste Diverted
+
+12,450 kg
+
+CaCO₃ Recovered
+
+9,850 kg
+
+Collection Points
+
+128
+
+Batches Processed
+
+342
+
+Average Purity
+
+94.2%
+
+Rejection Rate
+
+4.8%
+
+Estimated CO₂ Impact
+
+Use a clearly labelled estimated/demo metric, not a scientifically verified claim.
+
+Create charts:
+
+Waste collected over time
+CaCO₃ production
+Quality distribution
+Collection trends
+Grade distribution
+Supply demand
+12. Admin Dashboard
+
+Create a powerful central dashboard.
+
+Dashboard should include:
+
+Overview Cards
+Total Eggshell Collected
+Processing Today
+Batches Awaiting Grading
+Grade A Material
+Active Orders
+Available Inventory
+Charts
+Collection trend
+Processing volume
+Quality grade distribution
+Inventory levels
+Buyer demand
+Monthly recovery
+Alerts
+
+Examples:
+
+"Batch CF-2026-014 requires quality testing."
+
+"Collection point CP-023 has exceeded pickup threshold."
+
+"Grade A inventory is running low."
+
+13. Inventory Management
+
+Create:
+
+Inventory
+
+Track:
+
+Raw Eggshell
+↓
+Cleaned Shell
+↓
+Dried Shell
+↓
+Ground Material
+↓
+Processed CaCO₃
+↓
+Grade A
+Grade B
+Rejected
+
+Show quantities at each stage.
+
+Use progress bars and visual storage indicators.
+
+14. Order Management
+
+Create:
+
+Orders
+
+Order table:
+
+Order ID
+Buyer
+Material Grade
+Quantity
+Status
+Expected Delivery
+
+Statuses:
+
+Pending
+Confirmed
+Processing
+Dispatched
+Delivered
+
+Clicking an order opens tracking.
+
+15. Digital Certificate
+
+Create a feature:
+
+Generate Quality Certificate
+
+For every approved batch, allow the user to generate a digital quality certificate.
+
+Certificate should include:
+
+CalciFlow logo
+Batch ID
+Source
+Processing date
+Material
+CaCO₃ purity
+Moisture
+Particle size
+AI quality score
+Grade
+Testing status
+Certificate ID
+
+Add:
+
+Download Certificate
+
+The certificate should look professional and industrial.
+
+16. Real-World System Simulation
+
+This is VERY IMPORTANT.
+
+The website must feel like it represents an actual physical system.
+
+Create a page:
+
+Live Processing Plant
+
+Visually represent a simplified processing plant.
+
+Show:
+
+Collection Zone
+Sorting Zone
+Cleaning Zone
+Drying Unit
+Grinding Unit
+Processing Unit
+AI Quality Lab
+Storage
+Dispatch
+
+Connect them using animated flow lines.
+
+Each machine/process should show a status:
+
+🟢 Running
+🟡 Warning
+🔴 Offline
+
+Clicking a stage should open its information panel.
+
+Example:
+
+Grinding Unit
+
+Status: Running
+
+Input: 180 kg
+
+Output: 165 kg
+
+Particle Size: 72 μm
+
+Efficiency: 91.6%
+
+17. IoT / Sensor Simulation
+
+Since the real system may involve physical equipment, create a simulated sensor dashboard.
+
+Display:
+
+Temperature
+Humidity
+Moisture
+Motor Status
+Processing Rate
+Energy Consumption
+Machine Status
+
+Use animated charts.
+
+Clearly label demo/simulated sensor data where appropriate.
+
+18. AI Explanation
+
+Create a section:
+
+How the AI Works
+
+Explain the AI pipeline in simple language.
+
+Input Data
+↓
+Feature Extraction
+↓
+AI Model
+↓
+Quality Prediction
+↓
+Grade Assignment
+↓
+Recommendation
+
+Show that the AI can evaluate multiple parameters and provide a quality score.
+
+Include an Explainable AI panel:
+
+Why this batch received Grade A
+
+Example:
+
+CaCO₃ Purity
+
+High contribution
+
+Moisture
+
+Low moisture improves grade
+
+Particle Size
+
+Within target range
+
+Contamination
+
+Low contamination
+
+This makes the AI decision interpretable instead of presenting it as a black box.
+
+19. User Roles
+
+Implement role-based UI simulation.
+
+Roles:
+
+Admin
+
+Full system access.
+
+Collection Agent
+
+Collection points and pickups.
+
+Processing Operator
+
+Processing and machine monitoring.
+
+Quality Analyst
+
+AI grading and certificates.
+
+Buyer
+
+Marketplace, orders and batch information.
+
+Provide a login screen where the user can select a demo role.
+
+For the SIH prototype, use mock authentication/data rather than requiring a real backend unless one already exists.
+
+20. Navigation
+
+Create a clean navigation structure.
+
+Main navigation:
+
+Home
+About CalciFlow
+Process
+AI Quality Lab
+Collection
+Processing Plant
+Batches
+Inventory
+Marketplace
+Orders
+Impact
+Dashboard
+
+Use a sidebar for dashboard pages.
+
+Use a top navigation for public pages.
+
+21. Design Language
+
+The website should look:
+
+Modern
+Premium
+Clean
+Scientific
+Sustainable
+Industrial
+Data-driven
+
+Avoid making it look like a generic green environmental website.
+
+Use a combination of:
+
+Deep green
+Off-white
+Charcoal
+Soft neutral backgrounds
+Subtle calcium/mineral-inspired accents
+
+Use modern typography.
+
+Use cards with rounded corners but avoid excessive "bubble UI".
+
+Use subtle glassmorphism only where appropriate.
+
+Use smooth animations.
+
+Use professional charts.
+
+22. Visual Identity
+
+Create a simple CalciFlow brand identity.
+
+Logo concept:
+
+A combination of:
+
+Eggshell
++
+Circular arrow
++
+CaCO₃ / molecule concept
+
+Brand name:
+
+CalciFlow
+
+Tagline:
+
+"Waste. Refined. Reimagined."
+
+Alternative supporting line:
+
+"Closing the loop from eggshell waste to industrial calcium carbonate."
+
+23. Animations
+
+Add meaningful animations:
+
+Eggshell → powder transformation
+Processing pipeline movement
+AI scanning animation
+Dashboard counters
+Chart animations
+Batch status transitions
+Supply chain flow
+Machine status indicators
+
+Do NOT overuse animations.
+
+The website should remain fast and professional.
+
+24. Responsive Design
+
+The entire website must work on:
+
+Desktop
+Laptop
+Tablet
+Mobile
+
+Prioritize desktop because this is an SIH demonstration, but ensure responsive behavior.
+
+25. Data
+
+Use realistic mock data throughout the prototype.
+
+Create a centralized mock data layer so that:
+
+Batches
+Collection points
+Inventory
+Orders
+AI results
+Sensor data
+Dashboard statistics
+
+are consistent across the website.
+
+Do not hard-code unrelated values in multiple components.
+
+26. Important SIH Demonstration Flow
+
+The website must support a smooth demonstration.
+
+A judge should be able to understand the entire project in approximately 3–5 minutes.
+
+Create a demo journey:
+
+Step 1
+
+Open Home.
+
+Understand the problem.
+
+Step 2
+
+Click:
+
+See How CalciFlow Works
+
+View the complete eggshell → CaCO₃ process.
+
+Step 3
+
+Open:
+
+Live Processing Plant
+
+Show the simulated physical system.
+
+Step 4
+
+Open:
+
+AI Quality Lab
+
+Enter/select a batch.
+
+Run AI grading.
+
+Show:
+
+Grade A
+94/100
+95% purity
+97% AI confidence
+
+Step 5
+
+Open:
+
+Batch Traceability
+
+Show where the eggshell came from and how it was processed.
+
+Step 6
+
+Open:
+
+Marketplace
+
+Show the resulting CaCO₃ material available to buyers.
+
+Step 7
+
+Open:
+
+Impact Dashboard
+
+Show the environmental and operational impact.
+
+This should tell the complete story:
+
+Waste → Processing → AI → Quality → Product → Buyer → Impact
+
+27. Technical Requirements
+
+Build the website using a modern frontend architecture.
+
+Prefer:
+
+React
+TypeScript
+Tailwind CSS
+Modern component architecture
+Reusable components
+Chart library
+Interactive maps where practical
+Lucide or equivalent modern icons
+
+Keep components modular.
+
+Create reusable components for:
+
+Cards
+Tables
+Charts
+Status indicators
+Modals
+Forms
+Batch timelines
+Process stages
+Dashboard widgets
+28. Functional Prototype Requirement
+
+This should NOT be a collection of static pages.
+
+Buttons should actually work.
+
+Examples:
+
+"Run AI Grading"
+→ produces a result.
+
+"View Batch"
+→ opens batch details.
+
+"Generate Certificate"
+→ generates a certificate preview.
+
+"Schedule Pickup"
+→ opens a working modal/form.
+
+"Request Batch"
+→ creates a demo order.
+
+"View Plant"
+→ opens plant monitoring.
+
+"Filter Batches"
+→ filters the table.
+
+"Search"
+→ searches mock data.
+
+"Change Role"
+→ changes dashboard permissions/UI.
+
+29. Important Data Flow
+
+Make the prototype internally connected.
+
+For example:
+
+When a collection point creates a new collection:
+
+Collection quantity increases.
+
+That material enters:
+
+Raw Inventory.
+
+When processing occurs:
+
+Raw Inventory decreases.
+
+Processed Inventory increases.
+
+When AI grading is performed:
+
+A batch receives:
+
+Quality Score
+Grade
+Purity
+Quality Parameters
+
+When a buyer orders material:
+
+Available Inventory decreases.
+
+An order is created.
+
+This makes the website feel like an actual functioning system instead of disconnected screens.
+
+30. Homepage Storytelling
+
+The homepage should follow this storytelling sequence:
+
+Hero
+
+From Eggshell Waste to Industrial Value
+
+↓
+
+Problem
+
+Millions of eggshells are discarded as waste.
+
+↓
+
+Opportunity
+
+That waste contains valuable calcium carbonate.
+
+↓
+
+Solution
+
+CalciFlow captures, processes, grades and supplies it.
+
+↓
+
+Process
+
+Eggshell
+→ Collection
+→ Processing
+→ AI Grading
+→ CaCO₃
+→ Industry
+
+↓
+
+AI
+
+Every batch gets a measurable quality score.
+
+↓
+
+Marketplace
+
+Connect quality-graded material with buyers.
+
+↓
+
+Impact
+
+Turn waste into measurable value.
+
+↓
+
+CTA
+
+Enter the CalciFlow Platform
+
+31. What NOT to Do
+
+Do NOT:
+
+Create only a landing page.
+Use generic stock environmental imagery everywhere.
+Make unsupported scientific claims.
+Present simulated data as real measured data.
+Use excessive gradients.
+Use excessive animations.
+Make every section look like a card.
+Create fake AI terminology without explaining it.
+Make the dashboard disconnected from the rest of the system.
+Use placeholder text such as "Lorem ipsum".
+Leave buttons non-functional.
+32. Final Quality Standard
+
+The final result should feel like:
+
+A startup-grade industrial technology platform + SIH prototype + digital twin of the CalciFlow process.
+
+When someone opens the website, they should immediately understand:
+
+What is the problem?
+
+What does CalciFlow do?
+
+How does eggshell become CaCO₃?
+
+How does AI grade the material?
+
+How is every batch tracked?
+
+How does collection work?
+
+How does processing work?
+
+How does the supply chain work?
+
+Who buys the resulting material?
+
+What is the environmental/economic impact?
+
+Most importantly, the website should demonstrate that:
+
+CalciFlow is not just a website explaining an idea — it is a digital prototype of the complete system.
+
+Build the application end-to-end with polished UI, realistic mock data, functional interactions, responsive layouts, reusable components, and a clear SIH-ready demonstration flow.

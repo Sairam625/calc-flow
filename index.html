@@ -1,0 +1,1661 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalciFlow — AI-Driven CaCO₃ Grading & Supply Platform from Eggshell Waste</title>
+  <meta name="description"
+    content="CalciFlow transforms eggshell waste into certified industrial-grade Calcium Carbonate (CaCO₃) with AI quality grading, digital twin plant monitoring, and end-to-end supply chain traceability.">
+
+  <!-- Modern Industrial Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Header Bar -->
+  <header class="header-bar">
+    <div class="header-container">
+      <a href="#" class="brand-logo" data-navigate="view-landing">
+        <span class="brand-mark"></span>
+        <span class="brand-name">CalciFlow</span>
+      </a>
+
+      <nav class="nav-minimal">
+        <ul class="nav-links">
+          <li><button class="nav-btn active" data-target="view-landing">Overview</button></li>
+          <li><button class="nav-btn" data-target="view-pipeline">Process</button></li>
+          <li><button class="nav-btn" data-target="view-plant">Plant Twin</button></li>
+          <li><button class="nav-btn" data-target="view-batches">Batches</button></li>
+          <li><button class="nav-btn" data-target="view-marketplace">Marketplace</button></li>
+          <li><button class="nav-btn" data-target="view-impact">Impact</button></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="btn-role-switcher" class="role-btn-minimal" title="Switch Persona">
+          <span class="role-indicator"></span>
+          <span id="current-role-label">Admin</span>
+        </button>
+        <button class="btn btn-primary btn-sm" data-navigate="view-dashboard">
+          <span>Portal</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Main Content Wrapper -->
+  <main class="main-wrapper">
+
+    <!-- =========================================================================
+         VIEW 1: LANDING & HERO
+         ========================================================================= -->
+    <!-- =========================================================================
+         VIEW 1: EXECUTIVE LANDING & PLATFORM OVERVIEW
+         ========================================================================= -->
+    <section id="view-landing" class="view-section active-view">
+      <div class="hero-executive-centered">
+        <div class="hero-pill">
+          <span style="display:inline-block; width:6px; height:6px; background:#059669; border-radius:50%;"></span>
+          CIRCULAR BIO-MINERAL INFRASTRUCTURE • ENTERPRISE REFINING PLATFORM
+        </div>
+        <h1 class="hero-title">
+          Autonomous Biogenic Calcium Carbonate <span>Refining &amp; Supply</span>
+        </h1>
+        <p class="hero-subtitle">
+          CalciFlow transforms high-volume eggshell bio-waste into certified Grade A and Grade A+ industrial CaCO₃.
+          Engineered for polymers, technical coatings, paper, and sustainable precast with high-precision laboratory qualification,
+          digital-twin plant telemetry, and cryptographic custody.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg" data-navigate="view-plant">
+            View Live Plant Twin
+          </button>
+          <button class="btn btn-secondary btn-lg" data-navigate="view-batches">
+            Inspect Batch Ledger
+          </button>
+          <button class="btn btn-outline btn-lg" data-navigate="view-marketplace">
+            Browse Certified Marketplace
+          </button>
+        </div>
+      </div>
+
+      <!-- Executive KPI Strip (4 Columns) -->
+      <div class="kpi-executive-grid">
+        <div class="kpi-card">
+          <div class="kpi-card-val stat-waste-collected">12,450 kg</div>
+          <div class="kpi-card-label">Bio-Feedstock Diverted</div>
+          <div class="kpi-card-sub">Zero-landfill intake across 128 registered culinary &amp; hatchery collection points
+          </div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-card-val stat-caco3-recovered">9,850 kg</div>
+          <div class="kpi-card-label">Certified CaCO₃ Yield</div>
+          <div class="kpi-card-sub">Mean assayed purity of 95.8%, compliant with ASTM industrial masterbatch thresholds
+          </div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-card-val stat-co2-offset" style="color:#059669;">8,420 kg</div>
+          <div class="kpi-card-label">Net CO₂e Abatement</div>
+          <div class="kpi-card-sub">78.4% lower carbon footprint versus conventional open-pit quarry extraction</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-card-val stat-pass-rate" style="color:var(--brand-blue);">95.2%</div>
+          <div class="kpi-card-label">Quality Certification Rate</div>
+          <div class="kpi-card-sub">342 verified production lots certified across Grade A, Grade B, and Grade A+</div>
+        </div>
+      </div>
+
+      <!-- Quick Platform Navigation Flow -->
+      <div class="process-quicknav-strip">
+        <div class="quicknav-step" data-navigate="view-collection">
+          <div class="quicknav-step-num">STAGE 01</div>
+          <div class="quicknav-step-title">Waste Sourcing</div>
+          <div class="quicknav-step-sub">Geo-routed electric collection across restaurants, hotels &amp; hatcheries
+          </div>
+        </div>
+        <div class="quicknav-step" data-navigate="view-plant">
+          <div class="quicknav-step-num">STAGE 02</div>
+          <div class="quicknav-step-title">Digital Twin Plant</div>
+          <div class="quicknav-step-sub">Continuous ultrasonic de-membraning, desiccation &amp; micronization</div>
+        </div>
+        <div class="quicknav-step" data-navigate="view-batches">
+          <div class="quicknav-step-num">STAGE 03</div>
+          <div class="quicknav-step-title">Batch Quality Ledger</div>
+          <div class="quicknav-step-sub">Standardized laboratory purity verification &amp; certified lot tracking</div>
+        </div>
+        <div class="quicknav-step" data-navigate="view-marketplace">
+          <div class="quicknav-step-num">STAGE 04</div>
+          <div class="quicknav-step-title">Factory Procurement</div>
+          <div class="quicknav-step-sub">Real-time silo inventory allocation for polymer &amp; coating manufacturers
+          </div>
+        </div>
+      </div>
+
+      <!-- Platform Capabilities Bento Architecture -->
+      <div style="margin-bottom: 3.5rem;">
+        <div class="section-intro">
+          <span class="badge badge-blue">Platform Architecture</span>
+          <h2>Integrated Industrial Bio-Refining Infrastructure</h2>
+          <p>Four interconnected modules delivering continuous operations, automated quality assurance, and end-to-end
+            material traceability.</p>
+        </div>
+
+        <div class="bento-capabilities-grid">
+          <!-- Bento 1: Quality Assurance & Batch Certification -->
+          <div class="bento-card">
+            <div>
+              <div class="bento-card-header">
+                <span class="badge badge-blue">Laboratory Assay</span>
+                <span class="badge badge-green">ISO &amp; ASTM Standards</span>
+              </div>
+              <h3 class="bento-card-title">Quality Assurance &amp; Certified Batch Ledger</h3>
+              <p class="bento-card-desc">
+                High-precision laboratory qualification evaluates purity, moisture content, and particle distribution
+                curves against ASTM masterbatch standards. Every certified lot is categorized into Grade A+, Grade A,
+                or Grade B with transparent test metrics and cryptographic traceability.
+              </p>
+              <div class="bento-specs-row">
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Mean Assay Purity</span>
+                  <span class="spec-val">95.8% CaCO₃</span>
+                </div>
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Particle Median</span>
+                  <span class="spec-val">&lt; 68 µm (D50)</span>
+                </div>
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Standards</span>
+                  <span class="spec-val">ASTM D1199</span>
+                </div>
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Active Grades</span>
+                  <span class="spec-val">Grade A+, A, B</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-sm" data-navigate="view-batches" style="align-self: flex-start;">
+              Open Batch Ledger →
+            </button>
+          </div>
+
+          <!-- Bento 2: Plant Digital Twin -->
+          <div class="bento-card">
+            <div>
+              <div class="bento-card-header">
+                <span class="badge badge-cyan">Continuous Telemetry</span>
+                <span class="badge badge-green">All Systems Nominal</span>
+              </div>
+              <h3 class="bento-card-title">Digital Twin Plant Automation &amp; Sensor Mesh</h3>
+              <p class="bento-card-desc">
+                Real-time supervisory control synchronizes seven automated refining stages: acoustic cavitation
+                de-membraning, 105°C convective drying, and high-energy ball milling. Instant telemetry alarms prevent
+                thermal degradation and maintain consistent mineral quality.
+              </p>
+              <div class="bento-specs-row">
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Intake Throughput</span>
+                  <span class="spec-val">2,500 kg / Day</span>
+                </div>
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Dryer Temperature</span>
+                  <span class="spec-val">105.4°C Target</span>
+                </div>
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Milling Fineness</span>
+                  <span class="spec-val">Sub-45 µm Precision</span>
+                </div>
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Sensor Nodes</span>
+                  <span class="spec-val">18 Active Telemetry</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-sm" data-navigate="view-plant" style="align-self: flex-start;">
+              Inspect Plant Twin →
+            </button>
+          </div>
+
+          <!-- Bento 3: Cryptographic Custody Ledger -->
+          <div class="bento-card">
+            <div>
+              <div class="bento-card-header">
+                <span class="badge badge-amber">Compliance &amp; Custody</span>
+                <span class="badge badge-green">ISO 17025 Ready</span>
+              </div>
+              <h3 class="bento-card-title">Cryptographic Batch Custody &amp; Provenance</h3>
+              <p class="bento-card-desc">
+                Every production lot is sealed with an immutable digital passport. Traceability records link the final
+                mineral bag back to original restaurant intake, operator shift logs, milling parameters, and certified
+                laboratory analysis for compliance auditing.
+              </p>
+              <div class="bento-specs-row">
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Traceable Lots</span>
+                  <span class="spec-val">100% End-to-End</span>
+                </div>
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Ledger Records</span>
+                  <span class="spec-val">342 Audited Batches</span>
+                </div>
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Certification</span>
+                  <span class="spec-val">Automated COA PDF</span>
+                </div>
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Chain of Custody</span>
+                  <span class="spec-val">Zero Contamination</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-sm" data-navigate="view-batches" style="align-self: flex-start;">
+              Open Batch Ledger →
+            </button>
+          </div>
+
+          <!-- Bento 4: B2B Procurement Exchange -->
+          <div class="bento-card">
+            <div>
+              <div class="bento-card-header">
+                <span class="badge badge-slate">Commercial Procurement</span>
+                <span class="badge badge-blue">Direct Supply Buffer</span>
+              </div>
+              <h3 class="bento-card-title">Certified Industrial Mineral Marketplace</h3>
+              <p class="bento-card-desc">
+                Direct enterprise exchange providing transparent pricing, verifiable Certificates of Analysis (COA), and
+                scheduled dispatch from temperature-monitored nitrogen storage silos directly to polymer compounders,
+                coating formulators, and precast factories.
+              </p>
+              <div class="bento-specs-row">
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Ready Inventory</span>
+                  <span class="spec-val">1,480 kg Available</span>
+                </div>
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Grade Differentiation</span>
+                  <span class="spec-val">Grade A+, Grade A, B</span>
+                </div>
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Price Band</span>
+                  <span class="spec-val">₹26 – ₹58 / kg</span>
+                </div>
+                <div class="bento-spec-item">
+                  <span class="spec-lbl">Fulfillment SLA</span>
+                  <span class="spec-val">&lt; 48 hrs Factory Dispatch</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-sm" data-navigate="view-marketplace" style="align-self: flex-start;">
+              Browse Marketplace →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparative Industrial Benchmark Section (Table Matrix) -->
+      <div class="benchmark-section">
+        <div class="section-intro">
+          <span class="badge badge-slate">Technical Benchmark</span>
+          <h2>Virgin Mined Calcite vs. CalciFlow Biogenic CaCO₃</h2>
+          <p>Quantitative operational and ecological comparison across production parameters, carbon intensity, and
+            quality assurance workflows.</p>
+        </div>
+
+        <div class="benchmark-table-card">
+          <table class="benchmark-table">
+            <thead>
+              <tr>
+                <th style="width: 22%;">Performance Dimension</th>
+                <th style="width: 39%;">Traditional Limestone Quarrying</th>
+                <th style="width: 39%;">CalciFlow Circular Bio-Refining</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="benchmark-dim-name">Feedstock Origin</td>
+                <td class="benchmark-linear-val">Open-pit explosive blasting of ancient sedimentary rock formations;
+                  finite non-renewable extraction.</td>
+                <td class="benchmark-circular-val">100% diverted culinary and commercial hatchery eggshell waste;
+                  continuous urban renewable bio-feedstock.</td>
+              </tr>
+              <tr>
+                <td class="benchmark-dim-name">Embodied Carbon Intensity</td>
+                <td class="benchmark-linear-val">~ 1.18 kg CO₂e per kg (diesel haulage, heavy pulverization, thermal
+                  clinker processing).</td>
+                <td class="benchmark-circular-val">~ 0.18 kg CO₂e per kg (78% to 85% net abatement verified by ISO
+                  14040/44 LCA benchmarks).</td>
+              </tr>
+              <tr>
+                <td class="benchmark-dim-name">Quality Assurance Speed</td>
+                <td class="benchmark-linear-val">Manual periodic grab sampling; 24-to-72 hour turnaround from off-site
+                  wet chemistry laboratories.</td>
+                <td class="benchmark-circular-val">In-line near-infrared (NIR) multi-spectral scanning; automated neural
+                  assay &amp; grade assignment in &lt; 1.5 seconds.</td>
+              </tr>
+              <tr>
+                <td class="benchmark-dim-name">Supply Chain Traceability</td>
+                <td class="benchmark-linear-val">Opaque bulk aggregate distribution; commingled lots with zero
+                  verifiable origin chain of custody.</td>
+                <td class="benchmark-circular-val">Cryptographic digital batch passports; full provenance documentation
+                  from intake point to finished mineral lot.</td>
+              </tr>
+              <tr>
+                <td class="benchmark-dim-name">Chemical &amp; Heavy Metal Purity</td>
+                <td class="benchmark-linear-val">Variable trace mineral contaminants (silica, aluminum oxide, magnesium,
+                  trace heavy metals).</td>
+                <td class="benchmark-circular-val">Consistently high biogenic calcite crystal purity (up to 96.5% CaCO₃)
+                  with ultra-low toxic heavy metal concentrations.</td>
+              </tr>
+              <tr>
+                <td class="benchmark-dim-name">Ecological Land Footprint</td>
+                <td class="benchmark-linear-val">Topsoil stripping, crater formation, groundwater dust runoff, and
+                  biodiversity loss.</td>
+                <td class="benchmark-circular-val">Zero quarry land disturbance; active diversion of putrescible organic
+                  waste away from municipal landfills.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Life Cycle Assessment (LCA) Executive Briefing Strip -->
+      <div
+        style="background: #ffffff; border: 1px solid #bfdbfe; border-radius: var(--radius-lg); padding: 1.5rem 2rem; margin-bottom: 3.5rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; box-shadow: var(--shadow-sm);">
+        <div style="max-width: 720px;">
+          <div style="display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.4rem;">
+            <span class="badge badge-green">LCA Peer Benchmark</span>
+            <strong style="color: #0f172a; font-size: 1.05rem;">Life Cycle Assessment: Limestone vs. Eggshell-Derived
+              CaCO₃</strong>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0; line-height: 1.55;">
+            Identical mineral function, biogenic origin. Peer-reviewed comparative life cycle assessment confirms 60–80%
+            lower process energy demand, 70–85% water conservation, and elimination of quarry topsoil disruption.
+          </p>
+        </div>
+        <button class="btn btn-primary" data-navigate="view-impact">
+          Explore LCA Scientific Infographic
+        </button>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 2: 7-STAGE PROCESS PIPELINE
+         ========================================================================= -->
+    <section id="view-pipeline" class="view-section">
+      <div class="section-intro">
+        <span class="badge badge-cyan">Industrial Engineering</span>
+        <h2>7-Stage Waste-to-CaCO₃ Conversion Pipeline</h2>
+        <p>From kitchen bin to high-purity industrial mineral: a step-by-step technological breakdown of the CalciFlow
+          processing cycle.</p>
+      </div>
+
+      <div class="pipeline-stepper">
+        <div class="pipe-tab active" data-stage="0">
+          <div class="pipe-num">Stage 01</div>
+          <div class="pipe-title">Waste Collection</div>
+        </div>
+        <div class="pipe-tab" data-stage="1">
+          <div class="pipe-num">Stage 02</div>
+          <div class="pipe-title">Optical Sorting</div>
+        </div>
+        <div class="pipe-tab" data-stage="2">
+          <div class="pipe-num">Stage 03</div>
+          <div class="pipe-title">Wash & De-Membrane</div>
+        </div>
+        <div class="pipe-tab" data-stage="3">
+          <div class="pipe-num">Stage 04</div>
+          <div class="pipe-title">Thermal Desiccation</div>
+        </div>
+        <div class="pipe-tab" data-stage="4">
+          <div class="pipe-num">Stage 05</div>
+          <div class="pipe-title">Micronization</div>
+        </div>
+        <div class="pipe-tab" data-stage="5">
+          <div class="pipe-num">Stage 06</div>
+          <div class="pipe-title">Calcite Refinement</div>
+        </div>
+        <div class="pipe-tab" data-stage="6">
+          <div class="pipe-num">Stage 07</div>
+          <div class="pipe-title">Lab Certification</div>
+        </div>
+      </div>
+
+      <div class="pipeline-detail-card">
+        <div class="pipe-detail-info">
+          <span class="badge badge-green" style="margin-bottom:0.75rem;" id="pipe-stage-lead">Aggregated Eggshell Supply
+            Chain</span>
+          <h3 id="pipe-stage-title">Stage 01: Waste Collection & Intake</h3>
+          <p id="pipe-stage-desc">
+            Raw eggshells collected in real-time from registered restaurants, bakeries, hotels, and hatcheries using
+            geo-routed electric logistics vehicles.
+          </p>
+          <div style="display:flex; gap:0.85rem;">
+            <button class="btn btn-primary btn-sm" data-navigate="view-collection">Inspect Collection Network</button>
+            <button class="btn btn-secondary btn-sm" data-navigate="view-plant">View Processing Plant</button>
+          </div>
+        </div>
+
+        <div class="pipe-metrics-box">
+          <h4 style="font-size: 0.95rem; color: var(--accent-calcite);">Stage Parameters & Quality Targets</h4>
+          <div id="pipe-stage-metrics">
+            <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.88rem; color:var(--text-main);">
+              <span style="color:var(--brand-blue); font-weight:700;">—</span> <span>Input Capacity: 2,500 kg/day</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.88rem; color:var(--text-main);">
+              <span style="color:var(--brand-blue); font-weight:700;">—</span> <span>Automated Weight Scale & RFID
+                Tagging</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.88rem; color:var(--text-main);">
+              <span style="color:var(--brand-blue); font-weight:700;">—</span> <span>Bio-degradable sealed intake
+                bins</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 4: DIGITAL TWIN (LIVE PLANT & IOT SENSORS)
+         ========================================================================= -->
+    <section id="view-plant" class="view-section">
+      <div class="section-intro">
+        <span class="badge badge-green">Digital Twin Telemetry</span>
+        <h2>Live Processing Plant & Machinery Status</h2>
+        <p>Interactive physical twin of the CalciFlow pilot refinery. Monitor machine line health, continuous conveyor
+          throughput, and automated sensor feeds in real time.</p>
+      </div>
+
+      <div class="plant-twin-container">
+        <div class="plant-twin-header">
+          <div>
+            <span style="font-size:0.75rem; color:var(--accent-calcite); font-weight:700;">PILOT REFINERY #1 • BENGALURU
+              INDUSTRIAL CLUSTER</span>
+            <h3 style="font-size:1.3rem;">Continuous Multi-Stage Processing Line</h3>
+          </div>
+          <div style="display:flex; gap:0.75rem; align-items:center;">
+            <span class="badge badge-green">Line Status: Optimal (96.4%)</span>
+            <button class="btn btn-outline btn-sm"
+              onclick="showToast('Plant diagnostic test run initiated. All machine subsystems reporting green.', 'success')">Run
+              Diagnostic</button>
+          </div>
+        </div>
+
+        <!-- Machine Cards Grid -->
+        <div id="plant-machines-grid" class="plant-flow-layout">
+          <!-- Dynamic Machines inserted by JS -->
+        </div>
+
+        <!-- Selected Machine Diagnostics Box -->
+        <div
+          style="background:var(--bg-secondary); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:1.25rem; display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem; align-items:center;">
+          <div>
+            <span id="active-machine-code"
+              style="font-size:0.75rem; color:var(--accent-calcite); font-family:var(--font-mono);">GRD-05 • Stage
+              5</span>
+            <h4 id="active-machine-name" style="font-size:1.15rem; margin:0.25rem 0 0.5rem;">Planetary Micro-Ball Mill
+              Grinder</h4>
+            <p id="active-machine-notes" style="font-size:0.85rem; color:var(--text-muted);">
+              Precision micronization maintaining D50 = 68-72 µm. Active thermal cooling jacket engaged.
+            </p>
+          </div>
+          <div style="text-align:right;">
+            <span class="badge badge-green" id="active-machine-health"
+              style="font-size:0.85rem; padding:0.4rem 1rem;">91% Operational Health</span>
+            <div style="font-size:0.78rem; color:var(--text-dim); margin-top:0.45rem;">Next scheduled calibration in 184
+              operating hours</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real-time IoT Sensor Stream -->
+      <div style="margin-top: 2.5rem;">
+        <h3 style="margin-bottom:1rem;">Live Sensor Telemetry Stream (Simulated IoT Edge)</h3>
+        <div class="sensor-stream-grid">
+          <div class="sensor-gauge-card">
+            <div class="gauge-lbl">Fluidized Dryer Chamber</div>
+            <div id="sensor-val-dryer" class="gauge-val">104.8 °C</div>
+            <span class="badge badge-green">Target 105 °C</span>
+          </div>
+          <div class="sensor-gauge-card">
+            <div class="gauge-lbl">Granular Moisture (Pre-Grind)</div>
+            <div id="sensor-val-moisture" class="gauge-val">1.52 %</div>
+            <span class="badge badge-green">&lt; 2.0% Safe Limit</span>
+          </div>
+          <div class="sensor-gauge-card">
+            <div class="gauge-lbl">Ball Mill Vibration Index</div>
+            <div id="sensor-val-vibration" class="gauge-val">1.18 mm/s</div>
+            <span class="badge badge-cyan">ISO 10816 Class I</span>
+          </div>
+          <div class="sensor-gauge-card">
+            <div class="gauge-lbl">Line Processing Rate</div>
+            <div id="sensor-val-throughput" class="gauge-val">94.6 kg/h</div>
+            <span class="badge badge-green">Nominal 90-110</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 5: ENTERPRISE DASHBOARD & BATCH MANAGEMENT
+         ========================================================================= -->
+    <section id="view-dashboard" class="view-section">
+      <div class="dashboard-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar-nav">
+          <span class="sidebar-group-title">Operations</span>
+          <button class="sidebar-btn active" data-target="view-dashboard">
+            <span>Overview</span>
+          </button>
+          <button class="sidebar-btn" data-target="view-batches">
+            <span>Batches</span>
+          </button>
+          <button class="sidebar-btn" data-target="view-traceability">
+            <span>Traceability</span>
+          </button>
+          <button class="sidebar-btn" data-target="view-collection">
+            <span>Collection</span>
+          </button>
+          <button class="sidebar-btn" data-target="view-inventory">
+            <span>Inventory</span>
+          </button>
+
+          <span class="sidebar-group-title">Commercial</span>
+          <button class="sidebar-btn" data-target="view-marketplace">
+            <span>Marketplace</span>
+          </button>
+          <button class="sidebar-btn" data-target="view-orders">
+            <span>Orders</span>
+          </button>
+          <button class="sidebar-btn" data-target="view-impact">
+            <span>ESG Impact</span>
+          </button>
+        </aside>
+
+        <!-- Main Dashboard View Content -->
+        <div class="dashboard-content-area">
+          <div class="stats-grid-4">
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <span>Total Collected</span>
+              </div>
+              <div class="stats-value stat-waste-collected">12,450 kg</div>
+              <div class="stats-trend positive">↑ 8.4% this week</div>
+            </div>
+
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <span>Grade A Silo Buffer</span>
+              </div>
+              <div class="stats-value" id="dash-grade-a-stock" style="color:var(--accent-calcite);">850 kg</div>
+              <div class="stats-trend neutral">420 kg reserved for orders</div>
+            </div>
+
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <span>Raw Shell Intake</span>
+              </div>
+              <div class="stats-value" id="dash-raw-stock">1,450 kg</div>
+              <div class="stats-trend positive">Ready for de-membrane line</div>
+            </div>
+
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <span>Batches in Lab</span>
+              </div>
+              <div class="stats-value" id="dash-testing-batches">2</div>
+              <div class="stats-trend positive">Spectroscopy active</div>
+            </div>
+          </div>
+
+          <!-- Operational Alerts Banner -->
+          <div
+            style="background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:1.25rem;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+              <h4>Automated Smart Alerts</h4>
+              <span class="badge badge-slate">Real-time Feed</span>
+            </div>
+            <div id="dashboard-alerts-list">
+              <!-- Dynamically populated alerts -->
+            </div>
+          </div>
+
+          <!-- Quick Navigation Actions -->
+          <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:1rem;">
+            <div
+              style="background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:1.25rem;">
+              <h4>Batch Quality Ledger</h4>
+              <p style="font-size:0.82rem; margin:0.4rem 0 1rem;">Inspect certified lots, lab assays &amp; provenance.</p>
+              <button class="btn btn-primary btn-sm" data-navigate="view-batches">Inspect Batches →</button>
+            </div>
+            <div
+              style="background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:1.25rem;">
+              <h4>Dispatch Pickup</h4>
+              <p style="font-size:0.82rem; margin:0.4rem 0 1rem;">Schedule logistics EV to bakery/hotel hub.</p>
+              <button class="btn btn-secondary btn-sm" data-navigate="view-collection">Collection Network →</button>
+            </div>
+            <div
+              style="background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:1.25rem;">
+              <h4>Fulfill Orders</h4>
+              <p style="font-size:0.82rem; margin:0.4rem 0 1rem;">View buyer orders and dispatch tracking.</p>
+              <button class="btn btn-outline btn-sm" data-navigate="view-orders">Order Fulfillment →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 6: BATCH MANAGEMENT
+         ========================================================================= -->
+    <section id="view-batches" class="view-section">
+      <div class="section-intro">
+        <span class="badge badge-cyan">Quality Assurance</span>
+        <h2>Batch Management & Quality Grading Table</h2>
+        <p>Comprehensive ledger of every eggshell lot processed by CalciFlow. Filter by grade, search by source, and
+          access end-to-end provenance traces.</p>
+      </div>
+
+      <div class="table-container">
+        <div class="table-toolbar">
+          <div class="table-search-box">
+            <input type="text" id="batch-search-input" class="table-search-input"
+              placeholder="Search batch ID or source...">
+          </div>
+
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <label style="font-size:0.82rem; color:var(--text-muted);">Grade Filter:</label>
+            <select id="batch-grade-filter" class="form-select" style="width: auto; padding: 0.4rem 0.75rem;">
+              <option value="All">All Grades</option>
+              <option value="Grade A+">Grade A+ (Specialty Calcite)</option>
+              <option value="Grade A">Grade A (High Purity)</option>
+              <option value="Grade B">Grade B (Agro/Precast)</option>
+              <option value="Grade C">Grade C (Rejected)</option>
+            </select>
+          </div>
+        </div>
+
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th>Batch ID</th>
+              <th>Source Origin</th>
+              <th>Weight</th>
+              <th>CaCO₃ Purity</th>
+              <th>Quality Grade</th>
+              <th>Status</th>
+              <th>Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="batches-table-body">
+            <!-- Populated dynamically by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 7: BATCH TRACEABILITY JOURNEY
+         ========================================================================= -->
+    <section id="view-traceability" class="view-section">
+      <div class="section-intro">
+        <span class="badge badge-cyan">Custody Audit Trail</span>
+        <h2>End-to-End Batch Provenance & Journey</h2>
+        <p>Full lifecycle transparency: follow an eggshell batch from the donor kitchen table through processing, lab
+          qualification, and buyer delivery.</p>
+      </div>
+
+      <div
+        style="background:var(--bg-surface); border:1px solid var(--border-accent); border-radius:var(--radius-lg); padding:2rem; max-width:850px; margin:0 auto;">
+        <div
+          style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-subtle); padding-bottom:1.25rem;">
+          <div>
+            <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Verified Traceability
+              Dossier</span>
+            <h3 id="trace-batch-id"
+              style="font-family:var(--font-mono); color:var(--accent-calcite); font-size:1.6rem; margin-top:0.25rem;">
+              CF-2026-001</h3>
+            <p id="trace-source" style="font-size:0.9rem; color:var(--text-main);">Royal Orchid Hotel (180 kg)</p>
+          </div>
+          <div>
+            <span id="trace-grade" class="badge badge-green" style="font-size:0.85rem; padding:0.4rem 0.9rem;">Grade A •
+              Score 96/100</span>
+            <div style="margin-top:0.5rem; text-align:right;">
+              <button class="btn btn-outline btn-sm" onclick="window.openCertModal('CF-2026-001')">View
+                Certificate</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="trace-timeline-nodes" class="trace-timeline">
+          <!-- Timeline nodes generated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 8: COLLECTION NETWORK & MAP
+         ========================================================================= -->
+    <section id="view-collection" class="view-section">
+      <div class="section-intro">
+        <span class="badge badge-cyan">Reverse Logistics</span>
+        <h2>Eggshell Waste Collection Network</h2>
+        <p>Integrated supply coordination across hospitality chains, commercial bakeries, and hatcheries. Schedule
+          pickups to intake raw eggshell into the refinery.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns: 1.4fr 0.8fr; gap:1.5rem;">
+        <!-- Simulated Map Canvas -->
+        <div class="map-canvas-container">
+          <div class="map-grid-overlay"></div>
+
+          <!-- Decorative Map Graphics -->
+          <svg style="position:absolute; inset:0; width:100%; height:100%; opacity:0.15; pointer-events:none;"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M 50 150 Q 200 80 400 220 T 750 300" stroke="#00f5d4" stroke-width="2" fill="none"
+              stroke-dasharray="6,6" />
+            <path d="M 120 380 Q 320 280 550 420" stroke="#10b981" stroke-width="2" fill="none"
+              stroke-dasharray="4,4" />
+          </svg>
+
+          <!-- Interactive Pins Container -->
+          <div id="map-pins-container"></div>
+
+          <!-- Bottom Popup Detail Card -->
+          <div class="map-info-popup">
+            <div style="font-size:0.75rem; color:var(--accent-calcite); font-weight:700; text-transform:uppercase;">
+              Selected Collection Point</div>
+            <h4 id="popup-point-name" style="font-size:1.05rem; margin:0.2rem 0;">Crust & Crumb Master Bakery</h4>
+            <p id="popup-point-type" style="font-size:0.78rem; color:var(--text-muted); margin-bottom:0.75rem;">Bakery
+              Chain • Indiranagar 100ft Road</p>
+            <div
+              style="display:grid; grid-template-columns: 1fr 1fr; gap:0.5rem; font-size:0.76rem; margin-bottom:0.85rem;">
+              <div>Daily Gen: <strong id="popup-daily-gen" style="color:var(--text-main);">45 kg/day</strong></div>
+              <div>Collected: <strong id="popup-collected" style="color:var(--accent-calcite);">680 kg</strong></div>
+              <div>Last: <span id="popup-last-pickup" style="color:var(--text-muted);">Yesterday</span></div>
+              <div>Next: <strong id="popup-next-pickup" style="color:#f59e0b;">Today, 4:00 PM</strong></div>
+            </div>
+            <div style="font-size:0.72rem; color:var(--text-dim); margin-bottom:0.75rem;">
+              Assigned EV: <span id="popup-vehicle" style="color:var(--text-muted);">EV-Van CF-03</span>
+            </div>
+            <button id="popup-btn-schedule" class="btn btn-primary btn-sm" style="width:100%;">
+              Schedule / Complete Pickup
+            </button>
+          </div>
+        </div>
+
+        <!-- Collection Points List -->
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+            <h3>Registered Hubs (6 Active)</h3>
+            <span class="badge badge-green">14 Pickups Pending</span>
+          </div>
+          <div id="collection-points-list" style="max-height:420px; overflow-y:auto; padding-right:0.35rem;">
+            <!-- Generated by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 9: INVENTORY MANAGEMENT
+         ========================================================================= -->
+    <section id="view-inventory" class="view-section">
+      <div class="section-intro">
+        <span class="badge badge-cyan">Material Ledger</span>
+        <h2>Refinery Inventory & Silo Storage</h2>
+        <p>Continuous balance across all processing stages. Raw eggshell intakes convert into purified, ready-to-supply
+          Grade A and Grade B calcium carbonate.</p>
+      </div>
+
+      <div style="max-width:860px; margin:0 auto;">
+        <div id="inventory-bars-container">
+          <!-- Populated dynamically by JS -->
+        </div>
+
+        <div
+          style="display:flex; justify-content:space-between; align-items:center; background:var(--bg-surface); border:1px solid var(--border-accent); border-radius:var(--radius-md); padding:1.25rem; margin-top:1.5rem;">
+          <div>
+            <h4 style="color:var(--accent-calcite);">Ready for Commercial Allocation</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted);">Grade A & B finished products are nitrogen-sealed in
+              silos to prevent moisture absorption.</p>
+          </div>
+          <button class="btn btn-primary" data-navigate="view-marketplace">Open Marketplace →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 10: CIRCULAR MARKETPLACE
+         ========================================================================= -->
+    <section id="view-marketplace" class="view-section">
+      <div class="section-intro">
+        <span class="badge badge-cyan">Circular Economy Exchange</span>
+        <h2>CalciFlow CaCO₃ Supply Marketplace</h2>
+        <p>Connect validated, AI-certified calcium carbonate lots with industrial buyers in plastics, coatings, paper,
+          and sustainable construction.</p>
+      </div>
+
+      <div id="marketplace-products-grid" class="marketplace-grid">
+        <!-- Populated dynamically by JS -->
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 11: ORDER MANAGEMENT
+         ========================================================================= -->
+    <section id="view-orders" class="view-section">
+      <div class="section-intro">
+        <span class="badge badge-cyan">Fulfillment Logistics</span>
+        <h2>Industrial Supply Orders & Dispatch</h2>
+        <p>Monitor buyer orders, contract delivery schedules, and digital certificate handoffs.</p>
+      </div>
+
+      <div class="table-container">
+        <div class="table-toolbar">
+          <h3 style="font-size:1.1rem;">Active Contract Orders</h3>
+          <button class="btn btn-secondary btn-sm"
+            onclick="showToast('Order database refreshed with latest carrier telemetry.', 'info')">Refresh Feed</button>
+        </div>
+
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Buyer / Organization</th>
+              <th>Grade</th>
+              <th>Quantity</th>
+              <th>Total Value</th>
+              <th>Fulfillment Status</th>
+              <th>Expected Delivery</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="orders-table-body">
+            <!-- Populated dynamically by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 12: SUSTAINABILITY & ESG IMPACT DASHBOARD
+         ========================================================================= -->
+    <section id="view-impact" class="view-section">
+      <div class="section-intro">
+        <span class="badge badge-green">ESG & Carbon Accounting</span>
+        <h2>Environmental & Circularity Impact</h2>
+        <p>Measuring the real-world environmental dividend of replacing mined calcium carbonate with upcycled biogenic
+          eggshell material.</p>
+      </div>
+
+      <div class="stats-grid-4" style="margin-bottom:2rem;">
+        <div class="stats-card">
+          <div class="stats-card-header">
+            <span>Landfill Waste Diverted</span>
+          </div>
+          <div class="stats-value stat-waste-diverted">12.45 tons</div>
+          <div class="stats-trend positive">From 128 registered sources</div>
+        </div>
+
+        <div class="stats-card">
+          <div class="stats-card-header">
+            <span>High-Purity CaCO₃ Yield</span>
+          </div>
+          <div class="stats-value stat-caco3-recovered">9,850 kg</div>
+          <div class="stats-trend positive">94.8% average assayed purity</div>
+        </div>
+
+        <div class="stats-card">
+          <div class="stats-card-header">
+            <span>Estimated CO₂ Reduction</span>
+          </div>
+          <div class="stats-value stat-co2-offset" style="color:var(--accent-calcite);">8,420 kg CO₂e</div>
+          <div class="stats-trend positive">Avoided limestone calcination</div>
+        </div>
+
+        <div class="stats-card">
+          <div class="stats-card-header">
+            <span>Circularity Pass Rate</span>
+          </div>
+          <div class="stats-value stat-pass-rate">95.2%</div>
+          <div class="stats-trend positive">AI certified industrial compliance</div>
+        </div>
+      </div>
+
+      <!-- =========================================================================
+           LCA SCIENTIFIC ENVIRONMENTAL IMPACT COMPARISON (CURATED)
+           ========================================================================= -->
+      <div class="lca-container">
+        <!-- LCA Infographic Header Bar -->
+        <div class="lca-header-bar">
+          <div class="lca-header-left">
+            <div>
+              <h2 class="lca-title">Environmental Impact Comparison</h2>
+              <p class="lca-subtitle">Limestone-derived vs. Eggshell-derived Calcium Carbonate (CaCO₃)</p>
+            </div>
+          </div>
+          <div class="lca-header-badge">
+            <span>Same function. Different sources. A lower footprint.</span>
+          </div>
+        </div>
+
+        <!-- 1. Process Comparison Side-by-Side -->
+        <div class="lca-process-grid">
+          <!-- Process 1: Conventional -->
+          <div class="lca-process-box conventional">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+              <h4 style="color:#94a3b8; font-size:1.05rem;">1. Limestone-derived CaCO₃ (Conventional Process)</h4>
+              <span class="badge badge-slate">Mined Origin</span>
+            </div>
+            <div class="lca-step-sequence">
+              <div class="lca-step-badge">
+                <span class="badge badge-slate" style="font-size:0.68rem; margin-bottom:0.25rem;">STEP 01</span>
+                <strong>Mining &amp; Quarrying</strong>
+                <span>(limestone extraction, crushing)</span>
+              </div>
+              <span class="lca-step-arrow">→</span>
+              <div class="lca-step-badge">
+                <span class="badge badge-slate" style="font-size:0.68rem; margin-bottom:0.25rem;">STEP 02</span>
+                <strong>Processing</strong>
+                <span>(calcination/beneficiation, grinding, sieving)</span>
+              </div>
+              <span class="lca-step-arrow">→</span>
+              <div class="lca-step-badge">
+                <span class="badge badge-slate" style="font-size:0.68rem; margin-bottom:0.25rem;">STEP 03</span>
+                <strong>Transportation</strong>
+                <span>(to processing plant &amp; to user)</span>
+              </div>
+              <span class="lca-step-arrow">→</span>
+              <div class="lca-step-badge">
+                <span class="badge badge-slate" style="font-size:0.68rem; margin-bottom:0.25rem;">OUTPUT</span>
+                <strong style="color:#cbd5e1;">CaCO₃ powder</strong>
+                <span>(commercial grade)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Process 2: Proposed -->
+          <div class="lca-process-box proposed">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+              <h4 style="color:var(--accent-calcite); font-size:1.05rem;">2. Eggshell-derived CaCO₃ (Proposed Process)
+              </h4>
+              <span class="badge badge-green">Circular Upcycling</span>
+            </div>
+            <div class="lca-step-sequence">
+              <div class="lca-step-badge">
+                <span class="badge badge-green" style="font-size:0.68rem; margin-bottom:0.25rem;">STEP 01</span>
+                <strong>Eggshell Waste</strong>
+                <span>(food industry, restaurants, hotels, bakeries, etc.)</span>
+              </div>
+              <span class="lca-step-arrow">→</span>
+              <div class="lca-step-badge">
+                <span class="badge badge-green" style="font-size:0.68rem; margin-bottom:0.25rem;">STEP 02</span>
+                <strong>Cleaning &amp; Membrane Removal</strong>
+                <span>(water + ultrasonic separation)</span>
+              </div>
+              <span class="lca-step-arrow">→</span>
+              <div class="lca-step-badge">
+                <span class="badge badge-green" style="font-size:0.68rem; margin-bottom:0.25rem;">STEP 03</span>
+                <strong>Thermal Desiccation</strong>
+                <span>(105°C convective drying)</span>
+              </div>
+              <span class="lca-step-arrow">→</span>
+              <div class="lca-step-badge">
+                <span class="badge badge-green" style="font-size:0.68rem; margin-bottom:0.25rem;">STEP 04</span>
+                <strong>Grinding &amp; Sieving</strong>
+                <span>(high-speed ball milling)</span>
+              </div>
+              <span class="lca-step-arrow">→</span>
+              <div class="lca-step-badge">
+                <span class="badge badge-green" style="font-size:0.68rem; margin-bottom:0.25rem;">OUTPUT</span>
+                <strong style="color:var(--accent-calcite);">CaCO₃ powder</strong>
+                <span>(suitable grade)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Six Key Environmental Indicators Grid -->
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+            <h3>Key Environmental Indicators <span
+                style="font-size:0.85rem; color:var(--text-muted); font-weight:normal;">(per kg of CaCO₃ powder)</span>
+            </h3>
+            <span class="badge badge-green">Life Cycle Assessment</span>
+          </div>
+
+          <div class="lca-indicators-grid">
+            <!-- Indicator 1 -->
+            <div class="lca-indicator-card">
+              <div class="lca-indicator-header">
+                <div class="lca-card-icon" style="font-weight:700; font-size:0.75rem;">01</div>
+                <div>
+                  <h4>1. Carbon Footprint</h4>
+                  <span style="font-size:0.72rem; color:var(--text-muted);">(kg CO₂e/kg)</span>
+                </div>
+              </div>
+              <div class="lca-compare-row">
+                <div class="lca-col-limestone">
+                  <div class="lbl">Limestone-derived</div>
+                  <div class="val">~ 1.0 – 1.5</div>
+                  <div style="font-size:0.65rem; color:var(--text-dim);">(mining, calcination, processing, transport)
+                  </div>
+                </div>
+                <div class="lca-col-eggshell">
+                  <div class="lbl">Eggshell-derived</div>
+                  <div class="val">~ 0.1 – 0.3</div>
+                  <div style="font-size:0.65rem; color:var(--text-dim);">(mainly electricity, water, transport)</div>
+                </div>
+                <div class="lca-reduction-badge">
+                  <span>↓ ~70–90% lower</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Indicator 2 -->
+            <div class="lca-indicator-card">
+              <div class="lca-indicator-header">
+                <div class="lca-card-icon" style="font-weight:700; font-size:0.75rem;">02</div>
+                <div>
+                  <h4>2. Energy Consumption</h4>
+                  <span style="font-size:0.72rem; color:var(--text-muted);">(kWh/kg)</span>
+                </div>
+              </div>
+              <div class="lca-compare-row">
+                <div class="lca-col-limestone">
+                  <div class="lbl">Limestone-derived</div>
+                  <div class="val">~ 5 – 8</div>
+                  <div style="font-size:0.65rem; color:var(--text-dim);">(mining + processing)</div>
+                </div>
+                <div class="lca-col-eggshell">
+                  <div class="lbl">Eggshell-derived</div>
+                  <div class="val">~ 1 – 3</div>
+                  <div style="font-size:0.65rem; color:var(--text-dim);">(washing + drying + grinding + sieving)</div>
+                </div>
+                <div class="lca-reduction-badge">
+                  <span>↓ ~60–80% lower</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Indicator 3 -->
+            <div class="lca-indicator-card">
+              <div class="lca-indicator-header">
+                <div class="lca-card-icon" style="font-weight:700; font-size:0.75rem;">03</div>
+                <div>
+                  <h4>3. Water Usage</h4>
+                  <span style="font-size:0.72rem; color:var(--text-muted);">(L/kg)</span>
+                </div>
+              </div>
+              <div class="lca-compare-row">
+                <div class="lca-col-limestone">
+                  <div class="lbl">Limestone-derived</div>
+                  <div class="val">~ 20 – 50</div>
+                  <div style="font-size:0.65rem; color:var(--text-dim);">(mainly for processing and dust control)</div>
+                </div>
+                <div class="lca-col-eggshell">
+                  <div class="lbl">Eggshell-derived</div>
+                  <div class="val">~ 5 – 15</div>
+                  <div style="font-size:0.65rem; color:var(--text-dim);">(washing and cleaning)</div>
+                </div>
+                <div class="lca-reduction-badge">
+                  <span>↓ ~70–85% lower</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Indicator 4 -->
+            <div class="lca-indicator-card">
+              <div class="lca-indicator-header">
+                <div class="lca-card-icon" style="font-weight:700; font-size:0.75rem;">04</div>
+                <div>
+                  <h4>4. Land Use</h4>
+                  <span style="font-size:0.72rem; color:var(--text-muted);">(m²·yr/kg)</span>
+                </div>
+              </div>
+              <div class="lca-compare-row">
+                <div class="lca-col-limestone">
+                  <div class="lbl">Limestone-derived</div>
+                  <div class="val">~ 0.01 – 0.03</div>
+                  <div style="font-size:0.65rem; color:var(--text-dim);">(mining area, land disturbance)</div>
+                </div>
+                <div class="lca-col-eggshell">
+                  <div class="lbl">Eggshell-derived</div>
+                  <div class="val">~ 0</div>
+                  <div style="font-size:0.65rem; color:var(--text-dim);">(uses waste, no mining)</div>
+                </div>
+                <div class="lca-reduction-badge">
+                  <span>↓ ~100% lower</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Indicator 5 -->
+            <div class="lca-indicator-card">
+              <div class="lca-indicator-header">
+                <div class="lca-card-icon" style="font-weight:700; font-size:0.75rem;">05</div>
+                <div>
+                  <h4>5. Waste Generation</h4>
+                  <span style="font-size:0.72rem; color:var(--text-muted);">(kg waste/kg product)</span>
+                </div>
+              </div>
+              <div class="lca-compare-row">
+                <div class="lca-col-limestone">
+                  <div class="lbl">Limestone-derived</div>
+                  <div class="val">~ 0.05 – 0.15</div>
+                  <div style="font-size:0.65rem; color:var(--text-dim);">(overburden, tailings, processing waste)</div>
+                </div>
+                <div class="lca-col-eggshell">
+                  <div class="lbl">Eggshell-derived</div>
+                  <div class="val">~ 0.02 – 0.05</div>
+                  <div style="font-size:0.65rem; color:var(--text-dim);">(shell fragments, wastewater, small processing
+                    waste)</div>
+                </div>
+                <div class="lca-reduction-badge">
+                  <span>↓ ~50–80% lower</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Indicator 6 -->
+            <div class="lca-indicator-card">
+              <div class="lca-indicator-header">
+                <div class="lca-card-icon" style="font-weight:700; font-size:0.75rem;">06</div>
+                <div>
+                  <h4>6. Resource Depletion</h4>
+                  <span style="font-size:0.72rem; color:var(--text-muted);">Finite vs. Circular</span>
+                </div>
+              </div>
+              <div class="lca-compare-row">
+                <div class="lca-col-limestone">
+                  <div class="lbl">Limestone-derived</div>
+                  <div class="val" style="color:#ef4444;">High</div>
+                  <div style="font-size:0.65rem; color:var(--text-dim);">(non-renewable resource)</div>
+                </div>
+                <div class="lca-col-eggshell">
+                  <div class="lbl">Eggshell-derived</div>
+                  <div class="val" style="color:#34d399;">Very low</div>
+                  <div style="font-size:0.65rem; color:var(--text-dim);">(uses waste material)</div>
+                </div>
+                <div class="lca-reduction-badge">
+                  <span>Significant reduction</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Mid Analytics Row: Considerations + Chart + Table -->
+        <div class="lca-analytics-row">
+          <!-- Left: Additional Environmental Considerations -->
+          <div class="lca-panel">
+            <h4>Additional Environmental Considerations</h4>
+            <p style="font-size:0.78rem; color:var(--text-muted); margin-bottom:0.75rem;">Broad ecological & ambient
+              parameters across the production cycle</p>
+
+            <div class="lca-considerations-grid">
+              <div class="lca-con-item">
+                <strong>Air Emissions</strong>
+                <p><strong style="color:#94a3b8;">Limestone:</strong> dust, NOx, CO₂ (calcination)</p>
+                <p><strong style="color:#34d399;">Eggshell:</strong> minimal (mainly from electricity use and transport)
+                </p>
+              </div>
+
+              <div class="lca-con-item">
+                <strong>Water Pollution</strong>
+                <p><strong style="color:#94a3b8;">Limestone:</strong> potential runoff from mining/processing</p>
+                <p><strong style="color:#34d399;">Eggshell:</strong> low (mainly cleaning wastewater; can be treated)
+                </p>
+              </div>
+
+              <div class="lca-con-item">
+                <strong>Chemical Use</strong>
+                <p><strong style="color:#94a3b8;">Limestone:</strong> minimal (industrial processing)</p>
+                <p><strong style="color:#34d399;">Eggshell:</strong> mild (cleaning agents, water)</p>
+              </div>
+
+              <div class="lca-con-item">
+                <strong>Biodiversity Impact</strong>
+                <p><strong style="color:#94a3b8;">Limestone:</strong> habitat disruption, land degradation</p>
+                <p><strong style="color:#34d399;">Eggshell:</strong> negligible (uses existing waste)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Carbon Footprint Comparison Chart & Summary Table -->
+          <div class="lca-panel">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <h4>Estimated Carbon Footprint Comparison</h4>
+              <span class="badge badge-green">~70–90% reduction</span>
+            </div>
+            <p style="font-size:0.74rem; color:var(--text-muted);">(kg CO₂e per kg CaCO₃)</p>
+
+            <!-- Bar chart with Y-axis ticks -->
+            <div class="lca-chart-container">
+              <div class="lca-y-axis">
+                <span>2.0</span>
+                <span>1.5</span>
+                <span>1.0</span>
+                <span>0.5</span>
+                <span>0.0</span>
+              </div>
+
+              <div class="lca-bar-chart">
+                <div class="lca-chart-bar-wrap">
+                  <div class="lca-chart-bar lca-bar-lime">
+                    <span class="lca-bar-val">1.0 – 1.5</span>
+                  </div>
+                  <span class="lca-chart-label">Limestone-derived<br><strong>CaCO₃</strong></span>
+                </div>
+
+                <div class="lca-chart-badge-callout">
+                  <span>~70–90% net reduction</span>
+                </div>
+
+                <div class="lca-chart-bar-wrap">
+                  <div class="lca-chart-bar lca-bar-egg">
+                    <span class="lca-bar-val">0.1 – 0.3</span>
+                  </div>
+                  <span class="lca-chart-label" style="color:#34d399;">Eggshell-derived<br><strong>CaCO₃</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Overall Environmental Impact Matrix Table -->
+            <div style="margin-top:1.2rem;">
+              <h5 style="font-size:0.88rem; color:var(--text-main); margin-bottom:0.4rem;">Overall Environmental Impact
+              </h5>
+              <table class="lca-summary-table">
+                <thead>
+                  <tr>
+                    <th>Aspect</th>
+                    <th>Limestone-derived</th>
+                    <th>Eggshell-derived</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Carbon footprint</td>
+                    <td>High</td>
+                    <td><strong>↓ Low</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Energy use</td>
+                    <td>High</td>
+                    <td><strong>↓ Low</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Water use</td>
+                    <td>High</td>
+                    <td><strong>↓ Low</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Land use</td>
+                    <td>High</td>
+                    <td><strong>↓ Negligible</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Waste generation</td>
+                    <td>High</td>
+                    <td><strong>↓ Low</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Resource depletion</td>
+                    <td>High</td>
+                    <td><strong>↓ Very low</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Key Takeaways Box -->
+        <div class="lca-takeaway-banner">
+          <div>
+            <h4 style="color:var(--text-main); font-size:1.1rem; margin-bottom:0.5rem; font-weight:700;">Key Takeaway
+            </h4>
+            <ul
+              style="list-style:disc; margin-left:1.25rem; font-size:0.86rem; color:var(--text-muted); line-height:1.6;">
+              <li>Using eggshell waste significantly reduces the carbon footprint, energy and water demand compared to
+                conventional limestone-derived CaCO₃.</li>
+              <li>It diverts food waste from landfills, reduces mining and land disturbance, and supports a circular
+                economy.</li>
+              <li>The main environmental trade-offs are the energy and water used during washing, drying and grinding,
+                which are much lower than those in limestone processing.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 5. Bottom Circularity Motto Ribbon -->
+        <div class="lca-motto-strip">
+          <span>Less mining. Less waste. Lower emissions. A more circular future.</span>
+        </div>
+      </div>
+
+      <!-- Industrial Applications Cards -->
+      <div style="margin-top:2.5rem;">
+        <h3 style="text-align:center; margin-bottom:1.5rem;">Cross-Industry Applications of Upcycled CaCO₃</h3>
+        <div class="apps-grid">
+          <div class="app-industry-card">
+            <div class="badge badge-slate" style="margin-bottom:0.85rem;">CONSTRUCTION</div>
+            <h4 style="font-size:1.1rem; margin-bottom:0.4rem;">Eco-Concrete & Precast</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted);">
+              Acts as a reactive micro-filler in green concrete, accelerating early compressive strength and reducing
+              Portland cement clinker content.
+            </p>
+          </div>
+
+          <div class="app-industry-card">
+            <div class="badge badge-blue" style="margin-bottom:0.85rem;">POLYMERS & MASTERBATCHES</div>
+            <h4 style="font-size:1.1rem; margin-bottom:0.4rem;">Polymers & Masterbatches</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted);">
+              Sub-75 µm calcite powder enhances stiffness, heat distortion temperature, and surface finish in
+              polypropylene and PVC extrusion.
+            </p>
+          </div>
+
+          <div class="app-industry-card">
+            <div class="badge badge-cyan" style="margin-bottom:0.85rem;">PAPER & COATINGS</div>
+            <h4 style="font-size:1.1rem; margin-bottom:0.4rem;">Paper Coating & Pulp</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted);">
+              High whiteness (L* > 94) and alkaline sizing capability provide opacity, brightness, and ink receptivity
+              for recycled paper products.
+            </p>
+          </div>
+
+          <div class="app-industry-card">
+            <div class="badge badge-green" style="margin-bottom:0.85rem;">AGRONOMY</div>
+            <h4 style="font-size:1.1rem; margin-bottom:0.4rem;">Soil Conditioning & Agriculture</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted);">
+              Grade B material rapidly neutralizes acidic agricultural soils, enriching root zones with bio-available
+              calcium without soil compaction.
+            </p>
+          </div>
+
+          <div class="app-industry-card">
+            <div class="badge badge-amber" style="margin-bottom:0.85rem;">ANIMAL NUTRITION</div>
+            <h4 style="font-size:1.1rem; margin-bottom:0.4rem;">Animal Nutrition Supplement</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted);">
+              Sterilized, pathogen-free eggshell calcium offers superior biological assimilation for poultry feed
+              pre-mixes.
+            </p>
+          </div>
+
+          <div class="app-industry-card">
+            <div class="badge badge-slate" style="margin-bottom:0.85rem;">PAINTS & RESINS</div>
+            <h4 style="font-size:1.1rem; margin-bottom:0.4rem;">Paints, Sealants & Adhesives</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted);">
+              Functional extender offering precise rheology control, scrub resistance, and matte sheen uniformity in
+              industrial coatings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       MODALS
+       ========================================================================= -->
+
+  <!-- Modal 1: Persona Role Switcher -->
+  <div id="modal-role-select" class="modal-backdrop">
+    <div class="modal-dialog" style="max-width:520px;">
+      <div class="modal-header">
+        <h3>Switch Interactive Persona</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1rem;">
+          Select a stakeholder persona to experience how CalciFlow tailors permissions and workflows across the circular
+          supply chain:
+        </p>
+        <div style="display:flex; flex-direction:column; gap:0.65rem;">
+          <div class="role-select-item" data-role="Admin"
+            style="padding:0.85rem 1rem; background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); cursor:pointer;">
+            <strong style="color:var(--accent-calcite);">Executive Administrator</strong>
+            <div style="font-size:0.78rem; color:var(--text-muted);">Full system control, ESG analytics, and overall
+              plant oversight.</div>
+          </div>
+          <div class="role-select-item" data-role="Collection Agent"
+            style="padding:0.85rem 1rem; background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); cursor:pointer;">
+            <strong style="color:var(--accent-calcite);">Collection Logistics Agent</strong>
+            <div style="font-size:0.78rem; color:var(--text-muted);">Manage collection hubs, EV dispatching, and raw
+              intake logging.</div>
+          </div>
+          <div class="role-select-item" data-role="Processing Operator"
+            style="padding:0.85rem 1rem; background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); cursor:pointer;">
+            <strong style="color:var(--accent-calcite);">Plant Operator</strong>
+            <div style="font-size:0.78rem; color:var(--text-muted);">Monitor machine lines, thermal dryers, and ball
+              mill throughput.</div>
+          </div>
+          <div class="role-select-item" data-role="Quality Analyst"
+            style="padding:0.85rem 1rem; background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); cursor:pointer;">
+            <strong style="color:var(--accent-calcite);">AI Quality Analyst</strong>
+            <div style="font-size:0.78rem; color:var(--text-muted);">Perform spectroscopy inference, grade lots, and
+              issue certificates.</div>
+          </div>
+          <div class="role-select-item" data-role="Industrial Buyer"
+            style="padding:0.85rem 1rem; background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); cursor:pointer;">
+            <strong style="color:var(--accent-calcite);">Procurement Buyer</strong>
+            <div style="font-size:0.78rem; color:var(--text-muted);">Browse certified CaCO₃ lots, place orders, and
+              track shipments.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Schedule Pickup Modal -->
+  <div id="modal-schedule-pickup" class="modal-backdrop">
+    <div class="modal-dialog" style="max-width:480px;">
+      <div class="modal-header">
+        <h3>Dispatch Logistics Pickup</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="form-label">Collection Point</label>
+          <select id="pickup-point-select" class="form-select">
+            <option value="CP-001">Crust & Crumb Master Bakery (Indiranagar)</option>
+            <option value="CP-002">Grand Imperial Luxury Hotel (Whitefield)</option>
+            <option value="CP-003">Sunrise Agro & Egg Processors (Peenya)</option>
+            <option value="CP-004">Olive & Basil Italian Bistro (Koramangala)</option>
+            <option value="CP-005">Urban Valley Poultry Co-op (Yelahanka)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Estimated Shell Weight (kg)</label>
+          <input type="number" id="pickup-qty-input" class="form-input" value="75">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Assigned Vehicle Fleet</label>
+          <select class="form-select">
+            <option>EV Logistics Van CF-01 (Available)</option>
+            <option>EV Logistics Van CF-02 (Available)</option>
+            <option>Heavy Intake Truck CF-HT-01</option>
+          </select>
+        </div>
+        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.5rem;">
+          Executing this pickup credits incoming shell mass directly into Raw Eggshell Inventory.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-modal-close>Cancel</button>
+        <button id="btn-confirm-pickup" class="btn btn-primary">Confirm & Log Intake</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Order Checkout Modal -->
+  <div id="modal-order-checkout" class="modal-backdrop">
+    <div class="modal-dialog" style="max-width:500px;">
+      <div class="modal-header">
+        <h3>Request Material Lot</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" id="order-prod-id">
+        <div
+          style="background:#f8fafc; padding:1rem; border-radius:var(--radius-md); margin-bottom:1.2rem; border:1px solid var(--border-subtle);">
+          <strong id="order-prod-name" style="font-size:1.05rem; color:var(--brand-blue);">Ultra-Pure CaCO₃ (Grade
+            A)</strong>
+          <div style="display:flex; justify-content:space-between; margin-top:0.4rem; font-size:0.85rem;">
+            <span id="order-prod-price">₹42/kg</span>
+            <span id="order-prod-stock" style="color:#059669; font-weight:600;">850 kg available</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Company / Purchasing Entity</label>
+          <input type="text" id="order-buyer-name" class="form-input" value="Apex Polymers India Pvt Ltd">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Authorized Contact Person</label>
+          <input type="text" id="order-buyer-contact" class="form-input" value="Dr. Arvind Rao (Procurement VP)">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Order Quantity (kg)</label>
+          <input type="number" id="order-qty-input" class="form-input" value="100" min="25">
+        </div>
+
+        <div
+          style="display:flex; justify-content:space-between; align-items:center; padding:0.85rem 0; border-top:1px solid var(--border-subtle); margin-top:1rem;">
+          <span style="font-weight:600;">Estimated Total Value:</span>
+          <strong id="order-calc-total"
+            style="font-size:1.3rem; color:var(--accent-calcite); font-family:var(--font-heading);">₹4,200</strong>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-modal-close>Cancel</button>
+        <button id="btn-confirm-order" class="btn btn-primary">Confirm Purchase Order</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Official Laboratory Quality Certificate Modal (Printable) -->
+  <div id="modal-certificate" class="modal-backdrop">
+    <div class="modal-dialog" style="max-width:760px; background: #ffffff;">
+      <div class="modal-header" style="background:#0f172a; color:#ffffff;">
+        <h3 style="color:#ffffff; font-size:1.15rem;">Official Laboratory Quality Certificate</h3>
+        <button class="modal-close-btn" style="color:#ffffff;">&times;</button>
+      </div>
+      <div class="modal-body" style="padding:1.5rem; background:#f9fafb;">
+        <div id="printable-certificate" class="certificate-sheet">
+          <div class="cert-header">
+            <div class="cert-brand">CALCIFLOW INDUSTRIAL RESEARCH & QUALITY LABS</div>
+            <div class="cert-subtitle">Accredited Circular Mineral Assay Laboratory • ISO/IEC 17025 Compliant Pilot
+              Facility</div>
+          </div>
+
+          <div class="cert-title-main">CERTIFICATE OF ANALYSIS & QUALITY COMPLIANCE</div>
+
+          <div class="cert-grid">
+            <div>
+              <div><strong>Certificate ID:</strong> <span id="cert-doc-cert-id">CERT-CF-2026-001</span></div>
+              <div><strong>Batch Identifier:</strong> <span id="cert-doc-batch-id">CF-2026-001</span></div>
+              <div><strong>Date of Testing:</strong> <span id="cert-doc-date">2026-09-08</span></div>
+            </div>
+            <div>
+              <div><strong>Sample Origin:</strong> <span id="cert-doc-source">Royal Orchid Hotel Kitchen</span></div>
+              <div><strong>Processing Plant:</strong> <span id="cert-doc-facility">Bengaluru Pilot Plant Unit 1</span>
+              </div>
+              <div><strong>Net Batch Mass:</strong> <span id="cert-doc-weight">180 kg</span></div>
+            </div>
+          </div>
+
+          <table class="cert-table">
+            <thead>
+              <tr>
+                <th>Assay Parameter</th>
+                <th>Test Method</th>
+                <th>Assayed Result</th>
+                <th>Industrial Specification</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>CaCO₃ Mineral Purity</strong></td>
+                <td>EDTA Complexometric / NIR</td>
+                <td><strong id="cert-doc-purity" style="color:#0f172a;">95.8%</strong></td>
+                <td>&gt; 93.0% (Grade A)</td>
+              </tr>
+              <tr>
+                <td><strong>Free Moisture Content</strong></td>
+                <td>Halogen Moisture Analyzer (105°C)</td>
+                <td><span id="cert-doc-moisture">1.4%</span></td>
+                <td>&lt; 2.0% Max</td>
+              </tr>
+              <tr>
+                <td><strong>Particle Size Distribution (D50)</strong></td>
+                <td>Laser Diffraction (ISO 13320)</td>
+                <td><span id="cert-doc-particle">68 µm</span></td>
+                <td>&lt; 75 µm</td>
+              </tr>
+              <tr>
+                <td><strong>AI Composite Quality Index</strong></td>
+                <td>CalciFlow Neural Model v2.4</td>
+                <td><strong id="cert-doc-score">96 / 100</strong></td>
+                <td>Score &gt; 90 (Grade A)</td>
+              </tr>
+              <tr>
+                <td><strong>Microbiological Clearance</strong></td>
+                <td>Plate Count / Incubation</td>
+                <td>&lt; 10 CFU/g (Sterile)</td>
+                <td>Food/Industrial Safe</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div style="margin-bottom:1.2rem; font-family:var(--font-sans); font-size:0.85rem;">
+            <strong>Compliance Determination:</strong>
+            <span id="cert-doc-grade" style="font-weight:700; color:#0f172a;">Grade A (Ultra-Pure Industrial
+              Calcite)</span><br>
+            <span id="cert-doc-rec" style="color:#4b5563;">Approved for high-spec polymer masterbatch, coating and
+              mineral filler applications.</span>
+          </div>
+
+          <div class="cert-signatures">
+            <div>
+              <div style="font-family:'Courier New', monospace; font-weight:700; color:#0f172a;">Dr. P. V. Ramamurthy
+              </div>
+              <div>Chief Quality Officer, CalciFlow Labs</div>
+            </div>
+            <div class="cert-seal">
+              CALCIFLOW<br>CERTIFIED<br>QUALITY
+            </div>
+            <div>
+              <div style="font-family:'Courier New', monospace; font-weight:700; color:#0f172a;">SHA-256: 7f8a9e...01c4
+              </div>
+              <div>Cryptographic Ledger Stamp</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="background:#ffffff; border-top:1px solid #e5e7eb;">
+        <button class="btn btn-secondary" data-modal-close>Close</button>
+        <button id="btn-print-cert" class="btn btn-primary">Print / Download Certificate</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
